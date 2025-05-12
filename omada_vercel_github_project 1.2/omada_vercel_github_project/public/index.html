@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wenzy Wi-Fi Voucher Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('bench04.jpg'); /* Replace with your preferred image */
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 bg-opacity-70 flex items-center justify-center min-h-screen">
+  <div class="bg-white bg-opacity-90 p-8 rounded-xl shadow-xl w-full max-w-sm text-center">
+    
+    <!-- Logo -->
+    <img src="logo.png" alt="Wenzy Logo" class="mx-auto mb-4 w-24 h-24 object-contain" />
+    
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">SIS Wi-Fi Login</h2>
+    
+    <!-- Voucher Form -->
+    <form action="/api/login" method="POST" class="space-y-4">
+      <input type="text" name="voucher" placeholder="Enter your voucher code" required
+             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      <button type="submit"
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+        Connect
+      </button>
+    </form>
+  </div>
+</body>
+</html>
